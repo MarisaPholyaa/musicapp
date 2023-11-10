@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:music_app/utils/appcolors.dart';
 
 class FontBlack {
   static final font8 = GoogleFonts.righteous(
@@ -604,6 +605,36 @@ class FontWhite {
     textBaseline: TextBaseline.alphabetic,
     decoration: TextDecoration.none,
   );
+
+  static final font30Bold = GoogleFonts.righteous(
+    fontSize: 30.sp,
+    color: Colors.white,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font40Bold = GoogleFonts.righteous(
+    fontSize: 40.sp,
+    color: Colors.white,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font60Bold = GoogleFonts.righteous(
+    fontSize: 60.sp,
+    color: Colors.white,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
 }
 
 //ฟอนต์สีเขียว
@@ -1011,6 +1042,209 @@ class FontRed {
   static final font16Bold = GoogleFonts.righteous(
     fontSize: 16.sp,
     color: const Color(0xFFF50000),
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+}
+
+//ฟ้อนต์สีม่วง
+class FontPurple {
+  static final font10 = GoogleFonts.righteous(
+    fontSize: 10.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w300,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font10Bold = GoogleFonts.righteous(
+    fontSize: 10.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font12 = GoogleFonts.righteous(
+    fontSize: 12.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w300,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font12Bold = GoogleFonts.righteous(
+    fontSize: 12.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font14 = GoogleFonts.righteous(
+    fontSize: 14.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w300,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font14Bold = GoogleFonts.righteous(
+    fontSize: 14.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font16 = GoogleFonts.righteous(
+    fontSize: 16.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w300,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font16Bold = GoogleFonts.righteous(
+    fontSize: 16.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font18 = GoogleFonts.righteous(
+    fontSize: 18.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w300,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font18Bold = GoogleFonts.righteous(
+    fontSize: 18.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font20 = GoogleFonts.righteous(
+    fontSize: 20.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w300,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font20Bold = GoogleFonts.righteous(
+    fontSize: 20.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font22 = GoogleFonts.righteous(
+    fontSize: 22.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w300,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font22Bold = GoogleFonts.righteous(
+    fontSize: 22.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font24 = GoogleFonts.righteous(
+    fontSize: 24.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.w300,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font24Bold = GoogleFonts.righteous(
+    fontSize: 24.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font26Bold = GoogleFonts.righteous(
+    fontSize: 26.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font30Bold = GoogleFonts.righteous(
+    fontSize: 30.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font40Bold = GoogleFonts.righteous(
+    fontSize: 40.sp,
+    color: AppColors.purple2,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.none,
+  );
+
+  static final font60Bold = GoogleFonts.righteous(
+    fontSize: 60.sp,
+    color: AppColors.purple2,
     fontStyle: FontStyle.normal,
     fontWeight: FontWeight.bold,
     height: 1.5,
