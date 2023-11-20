@@ -496,6 +496,16 @@ class FontWhite {
     decoration: TextDecoration.none,
   );
 
+  static final font14BoldUnderline = GoogleFonts.righteous(
+    fontSize: 14.sp,
+    color: Colors.white,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.underline,
+  );
+
   static final font16 = GoogleFonts.righteous(
     fontSize: 16.sp,
     color: Colors.white,
@@ -514,6 +524,16 @@ class FontWhite {
     height: 1.5,
     textBaseline: TextBaseline.alphabetic,
     decoration: TextDecoration.none,
+  );
+
+  static final font16BoldUnderline = GoogleFonts.righteous(
+    fontSize: 16.sp,
+    color: Colors.white,
+    fontStyle: FontStyle.normal,
+    fontWeight: FontWeight.bold,
+    height: 1.5,
+    textBaseline: TextBaseline.alphabetic,
+    decoration: TextDecoration.underline,
   );
 
   static final font18 = GoogleFonts.righteous(

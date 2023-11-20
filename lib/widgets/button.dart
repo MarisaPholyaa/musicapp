@@ -78,3 +78,32 @@ class ButtonCustomOutline extends StatelessWidget {
     );
   }
 }
+
+class TextButtonCustom extends StatelessWidget {
+  void Function() onPressed;
+  TextStyle? textStyle;
+  Color? backgroundColor;
+  Size? fixedSize;
+  double? radius;
+  String text;
+  TextButtonCustom({
+    Key? key,
+    required this.onPressed,
+    this.textStyle,
+    this.backgroundColor,
+    this.fixedSize,
+    this.radius,
+    required this.text,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return TextButton(
+      onPressed: onPressed,
+      child: Text(
+        text,
+        style: textStyle ?? FontWhite.font16BoldUnderline,
+      ),
+    );
+  }
+}

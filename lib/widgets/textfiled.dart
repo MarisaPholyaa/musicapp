@@ -9,15 +9,21 @@ import 'package:music_app/utils/font_style.dart';
 
 class TextFiledCustom extends StatelessWidget {
   String labelText;
+  TextStyle? labelStyle;
   IconData? icon;
   bool? obscureText;
   int? maxLength;
+  Function(String)? onChanged;
+  String? Function(String?)? validator;
   TextFiledCustom({
     Key? key,
     required this.labelText,
+    this.labelStyle,
     this.icon,
     this.obscureText,
     this.maxLength,
+    this.onChanged,
+    this.validator,
   }) : super(key: key);
 
   @override
@@ -28,6 +34,8 @@ class TextFiledCustom extends StatelessWidget {
       obscureText: obscureText ?? false,
       obscuringCharacter: '*',
       maxLength: maxLength ?? 10,
+      onChanged: onChanged,
+      validator: validator,
       decoration: InputDecoration(
         counterText: '',
         label: Row(
@@ -43,7 +51,7 @@ class TextFiledCustom extends StatelessWidget {
             Text(labelText),
           ],
         ),
-        labelStyle: FontWhite.font18,
+        labelStyle: labelStyle ?? FontWhite.font16,
         contentPadding: EdgeInsets.symmetric(vertical: 8.h, horizontal: 0),
         enabledBorder: UnderlineInputBorder(
           borderSide: BorderSide(color: AppColors.white, width: 2.sp),
