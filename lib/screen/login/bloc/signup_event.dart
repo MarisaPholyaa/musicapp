@@ -20,25 +20,30 @@ class SignUpDataEvent extends SignupEvent {
     return emailValidate;
   }
 
-  // Future<bool> validatePhone(String? phone) async {
-  //   var phoneValidate = RegExp(r'[0-9]').hasMatch(phone ?? "");
-  //   return phoneValidate;
-  // }
+  Future<bool> validatePhone(String? phone) async {
+    var phoneValidate = RegExp(r'[0-9]').hasMatch(phone ?? "");
+    return phoneValidate;
+  }
 
-  // Future<bool> validateTextName(String? text) async {
-  //   var textValidate = RegExp(r'[a-zA-Zก-ฮ]').hasMatch(text ?? "");
-  //   return textValidate;
-  // }
+  Future<bool> validateTextName(String? text) async {
+    var textValidate = RegExp(r'[a-zA-Zก-ฮ]').hasMatch(text ?? "");
+    return textValidate;
+  }
 
-  // Future<bool> validatePassword(String? password) async {
-  //   var passwordValidate = RegExp(r'[a-zA-Z0-9]').hasMatch(password ?? "");
-  //   return passwordValidate;
-  // }
+  Future<bool> validatePassword(String? password) async {
+    var passwordValidate = RegExp(r'[a-zA-Z0-9]').hasMatch(password ?? "");
+    return passwordValidate;
+  }
+  //
 }
 
 class SetText extends SignupEvent {
   String? text;
-  SetText(this.text);
+  String? type;
+  SetText({
+    this.text,
+    this.type,
+  });
 
   Future<String> setText() async {
     if ((text?.isNotEmpty ?? false)) {
@@ -46,16 +51,5 @@ class SetText extends SignupEvent {
     } else {
       return '';
     }
-  }
-}
-
-class ValidateSignUp extends SignupEvent {
-  String? email;
-  ValidateSignUp({
-    this.email,
-  });
-  Future<bool> validateEmail() async {
-    var emailValidate = RegExp(r"^[a-zA-Z0-9.a-zA-Z0-9.!#$%&'*+-/=?^_`{|}~]+@[a-zA-Z0-9]+\.[a-zA-Z]+").hasMatch(email ?? '');
-    return emailValidate;
   }
 }

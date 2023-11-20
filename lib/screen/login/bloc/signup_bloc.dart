@@ -10,6 +10,10 @@ part 'signup_state.dart';
 
 class SignupBloc extends Bloc<SignupEvent, SignupState> {
   String email = "";
+  String phone = "";
+  String name = "";
+  String lastname = "";
+  String password = "";
   SignupBloc() : super(SignupInitial()) {
     on<SignUpDataEvent>((event, emit) async => _signUp(event, emit));
     on<SetText>((event, emit) async => _setText(event, emit));
@@ -17,8 +21,13 @@ class SignupBloc extends Bloc<SignupEvent, SignupState> {
 
   _signUp(SignUpDataEvent event, Emitter<SignupState> emit) async {
     // if (await event.validateEmail()) event.signUp();
-    bool validate = await event.validateEmail(email);
-    if (validate) {
+    bool emailvalidate = await event.validateEmail(email);
+    bool phonevalidate = await event.validatePhone(phone);
+    bool namevalidate = await event.validateTextName(name);
+    bool lastnamevalidate = await event.validateTextName(lastname);
+    bool passwordvalidate = await event.validatePassword(password);
+    //
+    if (emailvalidate && phonevalidate && namevalidate && lastnamevalidate && passwordvalidate) {
       event.signUp();
       GetX.Get.to(
         () => LoginScreen(),
@@ -26,11 +35,21 @@ class SignupBloc extends Bloc<SignupEvent, SignupState> {
       );
     } else {
       GetX.Get.back();
-      emit(SignupFail(message: "รูปแบบ email ไม่ถูกต้อง"));
+      emit(SignupFail(message: "ข้อมูลไม่ครบ"));
     }
   }
 
   _setText(SetText event, Emitter<SignupState> emit) async {
-    email = await event.setText();
+    if (event.type == "email") {
+      email = await event.setText();
+    } else if (event.type == "phone") {
+      phone = await event.setText();
+    } else if (event.type == "name") {
+      name = await event.setText();
+    } else if (event.type == "lastname") {
+      lastname = await event.setText();
+    } else if (event.type == "password") {
+      password = await event.setText();
+    }
   }
 }
